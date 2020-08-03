@@ -1,0 +1,167 @@
+body {
+  background: #E5E0D2;
+}
+
+body:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000%;
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  background-blend-mode: multiply;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+#header {
+  margin-bottom: 30px !important;
+}
+
+#header, #game-root {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+#game-root > table:first-child {
+  outline: 10px solid #94975F;
+  background: #B3B380;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+}
+
+#ledger {
+  padding-top: 30px;
+}
+
+div.pool {
+  margin-top: 30px;
+  width: 100%;
+  border: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background: none;
+}
+
+div.pool > div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+}
+
+canvas#map, canvas#cults, .scoring, .bonus, .favor, .town, .faction-board {
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+  border-style: solid;
+  border-width: 6px !important;
+  padding: 8px !important;
+}
+
+.bonus, .favor, .town {
+  margin-right: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.bonus > span:first-child,
+.favor > span:first-child,
+.town > span:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+div#action_required {
+  font-size: 26px;
+  font-weight: bold;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+div#data_entry {
+  margin-bottom: 40px;
+}
+
+div.faction-board {
+  border: 0;
+  background: #EEEEEE;
+  padding: 16px !important;
+  padding-top: 70px !important;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+div.faction-info {
+  font-size: 16px;
+}
+
+table.building-table {
+  margin-top: 20px;
+}
+
+table.building-table tr:first-child {
+  font-weight: bold;
+}
+
+table.income-table > tr > td:first-child {
+  font-weight: bold;
+}
+
+div.faction-board > div:first-child > div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding: 16px 8px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+canvas#cults {
+  background: #5C7C3D;
+  border-color: #416428;
+}
+
+canvas#map {
+  background: #BAD6E8;
+  border-color: #4080C7;
+  padding: 5px;
+}
+
+div.scoring {
+  background: radial-gradient(#76889A, #5D7884);
+  color: white;
+  border-color: #3E5462;
+}
+
+.scoring > div:first-child {
+  background: white;
+  color: black;
+  padding: 2px;
+  border-radius: 20px;
+  border-color: white;
+}
+
+.bonus {
+  background-color: #F6ECCA;
+  border-color: #648193;
+}
+
+.favor {
+  background: radial-gradient(#F9EE89, #FAC06C);
+  border-color: #F69F41;
+}
+
+.town {
+  background: radial-gradient(#8E9CA1, #74837C);
+  color: white;
+  border-color: #BFA56B;
+}
