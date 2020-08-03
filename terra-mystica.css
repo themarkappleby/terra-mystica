@@ -7,6 +7,7 @@ div.menu {
   padding: 8px;
 }
 
+#planning_entry > div,
 #move_entry td:first-child > div {
   padding-left: 0 !important;
 }
@@ -310,7 +311,10 @@ div.scoring {
 }
 
 
-#data_entry_tabs button, #move_entry_action {
+#data_entry_tabs button,
+#planning_entry_action,
+#chat_entry_submit,
+#move_entry_action {
   background: #B4B488;
   font-size: 18px;
   font-weight: normal !important;
@@ -322,13 +326,19 @@ div.scoring {
   transition: all 0.2s ease-in-out;
 }
 
-#data_entry_tabs button:focus, #move_entry_action:focus {
+#data_entry_tabs button:focus,
+#planning_entry_action:focus,
+#chat_entry_submit:focus,
+#move_entry_action:focus {
   outline: none;
   background: #575757;
   color: white !important;
 }
 
-#data_entry_tabs button:hover, #move_entry_action:hover {
+#data_entry_tabs button:hover,
+#planning_entry_action:hover,
+#chat_entry_submit:hover,
+#move_entry_action:hover {
   outline: none;
   background: #575757;
   color: white !important;
