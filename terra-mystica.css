@@ -101,6 +101,66 @@ div.faction-info {
   font-size: 16px;
 }
 
+.faction-info > div:first-child {
+  margin-bottom: 8px;
+}
+
+.faction-info > div:first-child > span:first-child {
+  background: #F6D56B;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.faction-info > div:first-child > span:nth-child(2) {
+  background: #D4C8A8;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.faction-info > div:first-child > span:nth-child(3) {
+  background: white;
+  padding: 5px 0 5px 5px;
+  display:inline-block;
+  border-radius: 15px 0 0 15px;
+}
+.faction-info > div:first-child > span:nth-child(4) {
+  background: white;
+  padding: 5px 0 5px 0;
+  display:inline-block;
+}
+.faction-info > div:first-child > span:nth-child(5) {
+  background: white;
+  padding: 5px 5px 5px 0;
+  display:inline-block;
+  border-radius: 0 15px 15px 0;
+  margin-right: 5px;
+}
+
+.faction-info > div:first-child > a:nth-child(6) {
+  background: #F9982F;
+  padding: 5px 0 5px 5px;
+  border-radius: 15px 0 0 15px;
+  display: inline-block;
+}
+.faction-info > div:first-child > span:nth-child(7) {
+  background: #F9982F;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+  border-radius: 0 15px 15px 0;
+  margin-right: 5px;
+}
+
+.faction-info > div:first-child > span:nth-child(8) {
+  background: #8C519E;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
+
 table.building-table {
   margin-top: 20px;
 }
