@@ -16,8 +16,23 @@ body:after {
   pointer-events: none;
 }
 
-#header {
+div#header {
   margin-bottom: 30px !important;
+  border: 0;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+div#header a {
+  color: white;
 }
 
 #header, #game-root {
@@ -28,8 +43,8 @@ body:after {
 #game-root > table:first-child {
   outline: 10px solid #94975F;
   background: #B3B380;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   padding: 10px;
 }
@@ -74,12 +89,23 @@ canvas#map, canvas#cults, .scoring, .bonus, .favor, .town, .faction-board {
 }
 
 div#action_required {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: bold;
   background: transparent;
   border: 0;
   padding: 0;
   margin-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  background: white;
+  margin: 0;
+  z-index: 999999;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  text-align: center;
 }
 
 div#data_entry {
@@ -102,7 +128,7 @@ div.faction-info {
 }
 
 .faction-info > div:first-child {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .faction-info > div:first-child > span:first-child {
@@ -145,6 +171,7 @@ div.faction-info {
   padding: 5px 0 5px 5px;
   border-radius: 15px 0 0 15px;
   display: inline-block;
+  color: white;
 }
 .faction-info > div:first-child > span:nth-child(7) {
   background: #F9982F;
@@ -152,6 +179,7 @@ div.faction-info {
   display: inline-block;
   border-radius: 0 15px 15px 0;
   margin-right: 5px;
+  color: white;
 }
 
 .faction-info > div:first-child > span:nth-child(8) {
@@ -160,6 +188,38 @@ div.faction-info {
   padding: 5px;
   border-radius: 15px;
 }
+
+
+.faction-info > div:nth-child(2) > span:nth-child(1) {
+  background: #85643B;
+  color: white;
+  padding: 5px;
+  border-radius: 15px 0 0 15px;
+}
+.faction-info > div:nth-child(2) > span:nth-child(2) {
+  background: #85643B;
+  color: white;
+  padding: 5px;
+  border-radius: 0 15px 15px 0;
+  margin-right: 5px;
+}
+
+
+.faction-info > div:nth-child(2) > span:nth-child(4) {
+  background: #9CC4D8;
+  color: white;
+  padding: 5px;
+  border-radius: 15px 0 0 15px;
+  color: black;
+}
+.faction-info > div:nth-child(2) > span:nth-child(5) {
+  background: #9CC4D8;
+  color: white;
+  padding: 5px;
+  border-radius: 0 15px 15px 0;
+  color: black;
+}
+
 
 table.building-table {
   margin-top: 20px;
@@ -224,4 +284,29 @@ div.scoring {
   background: radial-gradient(#8E9CA1, #74837C);
   color: white;
   border-color: #BFA56B;
+}
+
+
+#data_entry_tabs button {
+  background: #B4B488;
+  font-size: 18px;
+  font-weight: normal !important;
+  padding: 12px 18px;
+  color: black;
+  border-radius: 26px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#data_entry_tabs button:focus {
+  outline: none;
+  background: #575757;
+  color: white !important;
+}
+
+#data_entry_tabs button:hover {
+  outline: none;
+  background: #575757;
+  color: white !important;
 }
