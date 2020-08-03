@@ -194,12 +194,14 @@ div.faction-info {
   background: #85643B;
   color: white;
   padding: 5px;
+  padding-right: 0;
   border-radius: 15px 0 0 15px;
 }
 .faction-info > div:nth-child(2) > span:nth-child(2) {
   background: #85643B;
   color: white;
   padding: 5px;
+  padding-left: 0;
   border-radius: 0 15px 15px 0;
   margin-right: 5px;
 }
@@ -209,6 +211,7 @@ div.faction-info {
   background: #9CC4D8;
   color: white;
   padding: 5px;
+  padding-right: 0;
   border-radius: 15px 0 0 15px;
   color: black;
 }
@@ -216,6 +219,7 @@ div.faction-info {
   background: #9CC4D8;
   color: white;
   padding: 5px;
+  padding-left: 0;
   border-radius: 0 15px 15px 0;
   color: black;
 }
@@ -270,6 +274,11 @@ div.scoring {
   border-color: white;
 }
 
+.scoring-head + div span {
+  color: black;
+  background-color: #bbb;
+}
+
 .bonus {
   background-color: #F6ECCA;
   border-color: #648193;
@@ -284,6 +293,10 @@ div.scoring {
   background: radial-gradient(#8E9CA1, #74837C);
   color: white;
   border-color: #BFA56B;
+}
+
+.cult-FIRE, .cult-EARTH, .cult-AIR, .cult-WATER {
+  color: black;
 }
 
 
