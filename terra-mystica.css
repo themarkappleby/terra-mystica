@@ -2,6 +2,15 @@ body {
   background: #E5E0D2;
 }
 
+div.menu {
+  z-index: 9999999;
+  padding: 8px;
+}
+
+#move_entry td:first-child > div {
+  padding-left: 0 !important;
+}
+
 body:after {
   content: "";
   display: block;
@@ -301,7 +310,7 @@ div.scoring {
 }
 
 
-#data_entry_tabs button {
+#data_entry_tabs button, #move_entry_action {
   background: #B4B488;
   font-size: 18px;
   font-weight: normal !important;
@@ -313,13 +322,13 @@ div.scoring {
   transition: all 0.2s ease-in-out;
 }
 
-#data_entry_tabs button:focus {
+#data_entry_tabs button:focus, #move_entry_action:focus {
   outline: none;
   background: #575757;
   color: white !important;
 }
 
-#data_entry_tabs button:hover {
+#data_entry_tabs button:hover, #move_entry_action:hover {
   outline: none;
   background: #575757;
   color: white !important;
