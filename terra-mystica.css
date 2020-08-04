@@ -384,17 +384,16 @@ div#data_entry_tabs {
 }
 
 div#preview_status {
-  background: #eee;
+  background: transparent;
   font-size: 18px;
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 pre#preview_commands {
   margin: 0;
   font-size: 18px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 40px;
+  padding: 0;
   box-sizing: border-box;
+  background: transparent;
 }
