@@ -372,10 +372,29 @@ div#data_entry_tabs {
   box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
 }
 
+#move_entry textarea,
 #planning_entry textarea {
   margin-bottom: 16px;
+  font-size: 16px;
 }
 
 #chat_entry textarea {
   margin: 16px 0;
+  font-size: 16px;
+}
+
+div#preview_status {
+  background: #eee;
+  font-size: 18px;
+  padding: 10px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+pre#preview_commands {
+  margin: 0;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
 }
