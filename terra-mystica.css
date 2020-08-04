@@ -317,7 +317,6 @@ div.scoring {
 #move_entry_action {
   background: #B4B488;
   font-size: 18px;
-  font-weight: normal !important;
   padding: 12px 18px;
   color: black;
   border-radius: 26px;
@@ -326,7 +325,23 @@ div.scoring {
   transition: all 0.2s ease-in-out;
 }
 
-#data_entry_tabs button:focus,
+#data_entry_tabs button {
+  border-radius: 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background: #bbb;
+  border-top: 5px solid #bbb;
+}
+
+#data_entry_tabs button:hover,
+#data_entry_tabs button:focus {
+  border-bottom-color: #eee;
+  background: #eee;
+  outline: 0;
+  opacity: 1;
+  border-top-color: #EEBF42;
+}
+
 #planning_entry_action:focus,
 #chat_entry_submit:focus,
 #move_entry_action:focus {
@@ -335,11 +350,32 @@ div.scoring {
   color: white !important;
 }
 
-#data_entry_tabs button:hover,
 #planning_entry_action:hover,
 #chat_entry_submit:hover,
 #move_entry_action:hover {
   outline: none;
   background: #575757;
   color: white !important;
+}
+
+div#data_entry_tabs {
+  margin-bottom: -3px;
+}
+
+#move_entry,
+#planning_entry,
+#recent_entry,
+#chat_entry,
+#info_entry {
+  background: #eee;
+  padding: 25px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+
+#planning_entry textarea {
+  margin-bottom: 16px;
+}
+
+#chat_entry textarea {
+  margin: 16px 0;
 }
